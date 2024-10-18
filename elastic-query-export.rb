@@ -5,11 +5,11 @@
 class ElasticQueryExport < Formula
   desc ""
   homepage "https://github.com/pteich"
-  version "1.6.2-test"
+  version "1.6.2"
 
   on_macos do
-    url "https://github.com/pteich/elastic-query-export/releases/download/v1.6.2-test/elastic-query-export_1.6.2-test_darwin_all.zip"
-    sha256 "dd3c80b0f448e4487c72e69a6b10a55c594c4ef07f61ac82d08ad2cbe968f6a9"
+    url "https://github.com/pteich/elastic-query-export/releases/download/v1.6.2/elastic-query-export_1.6.2_darwin_all.zip"
+    sha256 "d8a3dc21dda8ba0dbc29f0bbded172104155558b24c13a87adc477139e11fa9d"
 
     def install
       bin.install "elastic-query-export"
@@ -19,8 +19,8 @@ class ElasticQueryExport < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/pteich/elastic-query-export/releases/download/v1.6.2-test/elastic-query-export_1.6.2-test_linux_amd64.tar.gz"
-        sha256 "25160c042cdb68f963283fc827aed81ba62bbc1f02196510ed8ddb6367e4351d"
+        url "https://github.com/pteich/elastic-query-export/releases/download/v1.6.2/elastic-query-export_1.6.2_linux_amd64.tar.gz"
+        sha256 "dcf34ca134c0a59b73875f96006fc20573b920a497721c5c5b60ab19726a915a"
 
         def install
           bin.install "elastic-query-export"
@@ -29,8 +29,8 @@ class ElasticQueryExport < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/pteich/elastic-query-export/releases/download/v1.6.2-test/elastic-query-export_1.6.2-test_linux_arm64.tar.gz"
-        sha256 "e60127d1e3fd3e09230f77e68d0aec5805366a083c83c0873a4b67b8cd518ad8"
+        url "https://github.com/pteich/elastic-query-export/releases/download/v1.6.2/elastic-query-export_1.6.2_linux_arm64.tar.gz"
+        sha256 "aedeadbd2d657cfe9e2ff8b8aec5f17019eec572b2cc3410eb6e4ad4b8da0b66"
 
         def install
           bin.install "elastic-query-export"
