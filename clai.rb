@@ -5,11 +5,11 @@
 class Clai < Formula
   desc ""
   homepage "https://github.com/pteich/clai"
-  version "0.1.4"
+  version "0.1.5"
 
   on_macos do
-    url "https://github.com/pteich/clai/releases/download/v0.1.4/clai_0.1.4_darwin_all.zip"
-    sha256 "19cf473b90a47d2f0c2980e19b203a8873410caaa7c0dbe940c6fe3e98e7eebb"
+    url "https://github.com/pteich/clai/releases/download/v0.1.5/clai_0.1.5_darwin_all.zip"
+    sha256 "ee336cdd6514f53d22b5414b56d3465d655ac1e76e9312914d5ffc96831a665d"
 
     def install
       bin.install "clai"
@@ -19,8 +19,8 @@ class Clai < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/pteich/clai/releases/download/v0.1.4/clai_0.1.4_linux_amd64.tar.gz"
-        sha256 "d384de038829bbd050b9d476c309760e78d5116bf31f73d7d7cbd1c8e2e2b502"
+        url "https://github.com/pteich/clai/releases/download/v0.1.5/clai_0.1.5_linux_amd64.tar.gz"
+        sha256 "d00da73fb40e714f81be22fa5693b1eaede095a29b91755a2bfebd29fa4ead2e"
 
         def install
           bin.install "clai"
@@ -29,8 +29,8 @@ class Clai < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/pteich/clai/releases/download/v0.1.4/clai_0.1.4_linux_arm64.tar.gz"
-        sha256 "2b717bc95d56b9fd75795f7ea07c3812a51e5b5986397e29e6852669243e89bb"
+        url "https://github.com/pteich/clai/releases/download/v0.1.5/clai_0.1.5_linux_arm64.tar.gz"
+        sha256 "cfb6391dbff68a99adfe60fe160bb4855a0f418691c0ccc016f3ead4eba0afa3"
 
         def install
           bin.install "clai"
