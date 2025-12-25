@@ -5,11 +5,11 @@
 class ElasticQueryExport < Formula
   desc ""
   homepage "https://github.com/pteich/elastic-query-export"
-  version "1.6.3"
+  version "1.7.0"
 
   on_macos do
-    url "https://github.com/pteich/elastic-query-export/releases/download/v1.6.3/elastic-query-export_1.6.3_darwin_all.zip"
-    sha256 "12cbbf71a3aea8201c786b4b081654a2674ef6aafadf7945d8c8963d71386f51"
+    url "https://github.com/pteich/elastic-query-export/releases/download/v1.7.0/elastic-query-export_1.7.0_darwin_all.zip"
+    sha256 "fed5776fdcdd1741adc78bedb4bdaa3fe5ce0815f196e8a78c70f30ede001722"
 
     def install
       bin.install "elastic-query-export"
@@ -17,24 +17,18 @@ class ElasticQueryExport < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/pteich/elastic-query-export/releases/download/v1.6.3/elastic-query-export_1.6.3_linux_amd64.tar.gz"
-        sha256 "fb56d34c7459f7bb7fb01f0fab45ea742b156b26f0b6b840c4836efd077ec93a"
-
-        def install
-          bin.install "elastic-query-export"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/pteich/elastic-query-export/releases/download/v1.7.0/elastic-query-export_1.7.0_linux_amd64.tar.gz"
+      sha256 "ccfcd0643b5055a1120370e9e596a265b7204731f0342006f32fc9a3250ea774"
+      def install
+        bin.install "elastic-query-export"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/pteich/elastic-query-export/releases/download/v1.6.3/elastic-query-export_1.6.3_linux_arm64.tar.gz"
-        sha256 "e879babab3fb0762c8729e7ca6393bedb84faf2d07857fa588bee1056a2037ba"
-
-        def install
-          bin.install "elastic-query-export"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/pteich/elastic-query-export/releases/download/v1.7.0/elastic-query-export_1.7.0_linux_arm64.tar.gz"
+      sha256 "be8999f762edf4b6c36018049097a9b3af41b64a85f309d10b5819070e1cd9d4"
+      def install
+        bin.install "elastic-query-export"
       end
     end
   end
