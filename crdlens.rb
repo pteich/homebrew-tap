@@ -5,11 +5,11 @@
 class Crdlens < Formula
   desc ""
   homepage "https://github.com/pteich/crdlens"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
-    url "https://github.com/pteich/crdlens/releases/download/v0.2.0/crdlens_0.2.0_darwin_all.zip"
-    sha256 "43ef4a9d08e9747c7efb2c83926e415b61880390a47e92464df39f4f40d1efb0"
+    url "https://github.com/pteich/crdlens/releases/download/v0.3.0/crdlens_0.3.0_darwin_all.zip"
+    sha256 "c92626b0b72ddd4d9d9c7d182b8a7be9702e21534ec8884837fd45befd42e236"
 
     def install
       bin.install "crdlens"
@@ -18,15 +18,15 @@ class Crdlens < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pteich/crdlens/releases/download/v0.2.0/crdlens_0.2.0_linux_amd64.tar.gz"
-      sha256 "0fe3bab03f4cd0199ad2876b1c72aacce3ccf5972145808d2c57b1defc8c4ad0"
+      url "https://github.com/pteich/crdlens/releases/download/v0.3.0/crdlens_0.3.0_linux_amd64.tar.gz"
+      sha256 "cc5a17b08f98af1bf4c44d3f3aa4ef8ba3b14b5bb4bfa746898e93f82be1245f"
       def install
         bin.install "crdlens"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pteich/crdlens/releases/download/v0.2.0/crdlens_0.2.0_linux_arm64.tar.gz"
-      sha256 "b3f304a10c20ea03e7ad6c3330702d39335f80d12b0bb1afde8420f03e0d9582"
+      url "https://github.com/pteich/crdlens/releases/download/v0.3.0/crdlens_0.3.0_linux_arm64.tar.gz"
+      sha256 "0aa273623845aa0c314226c374b6a88e54dfd3d3fc5a8dc1e184a635f42fe50a"
       def install
         bin.install "crdlens"
       end
