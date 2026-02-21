@@ -5,11 +5,11 @@
 class Kcplens < Formula
   desc ""
   homepage "https://github.com/pteich/kcplens"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
-    url "https://github.com/pteich/kcplens/releases/download/v0.1.0/kcplens_0.1.0_darwin_all.zip"
-    sha256 "4297da5433b769367d8e937c887ead4c6ca79fd48f0077786d79a2662d547112"
+    url "https://github.com/pteich/kcplens/releases/download/v0.2.0/kcplens_0.2.0_darwin_all.zip"
+    sha256 "6dd79656717fbec4d542d9330ddeb620a509d9467f819ee9f906013902d00f3f"
 
     def install
       bin.install "kcplens"
@@ -18,15 +18,15 @@ class Kcplens < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pteich/kcplens/releases/download/v0.1.0/kcplens_0.1.0_linux_amd64.tar.gz"
-      sha256 "204635c6db480247d6ff27f08234db1fe66fb5a9d1f12057a0ac412fcadbbf92"
+      url "https://github.com/pteich/kcplens/releases/download/v0.2.0/kcplens_0.2.0_linux_amd64.tar.gz"
+      sha256 "d6ea3e2bc1630e87374735705eb4510a0123c7957355c0ce88d2bccd45d47759"
       def install
         bin.install "kcplens"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pteich/kcplens/releases/download/v0.1.0/kcplens_0.1.0_linux_arm64.tar.gz"
-      sha256 "a2eb598458c0d467a1b8022263bfd53bb7bbf0e2e7d4895b2b0ff401304b794d"
+      url "https://github.com/pteich/kcplens/releases/download/v0.2.0/kcplens_0.2.0_linux_arm64.tar.gz"
+      sha256 "fe2699f7f134d98a28c727e355b29d38ad154e6b2a6a00eb0490d8ac2eca0ff8"
       def install
         bin.install "kcplens"
       end
