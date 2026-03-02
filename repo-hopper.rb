@@ -5,20 +5,20 @@
 class RepoHopper < Formula
   desc ""
   homepage "https://github.com/pteich/repo-hopper"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pteich/repo-hopper/releases/download/v0.2.0/repo-hopper-cli_darwin_amd64.tar.gz"
-      sha256 "ab00e9a62db8382cc2298e2594257fac5b6102b1bc08feecea6941955cb17673"
+      url "https://github.com/pteich/repo-hopper/releases/download/v0.2.1/repo-hopper-cli_darwin_amd64.tar.gz"
+      sha256 "e7211ae0bb7f677d525e13eb79f9a04d85d334f50282414387d97dde8eebcf77"
 
       define_method(:install) do
         bin.install "repo-hopper"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pteich/repo-hopper/releases/download/v0.2.0/repo-hopper-cli_darwin_arm64.tar.gz"
-      sha256 "4d398b1c3c2c022fb19151691be59c8db529fe1c9faa585bf63917a59ab09c72"
+      url "https://github.com/pteich/repo-hopper/releases/download/v0.2.1/repo-hopper-cli_darwin_arm64.tar.gz"
+      sha256 "966148cc3a6a63e7ac46b585021ad0fd41aa4c88107c92732c0f3d14f7aaf221"
 
       define_method(:install) do
         bin.install "repo-hopper"
@@ -28,15 +28,15 @@ class RepoHopper < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pteich/repo-hopper/releases/download/v0.2.0/repo-hopper-cli_linux_amd64.tar.gz"
-      sha256 "8a6a2ca2575b99eafb0529b9ceffc5cef60e2ff819c7039ed60b819b7d490769"
+      url "https://github.com/pteich/repo-hopper/releases/download/v0.2.1/repo-hopper-cli_linux_amd64.tar.gz"
+      sha256 "158fe7b818cfece5455a64065167920aade975751f783eb4037d3bbbdc1bcd8d"
       define_method(:install) do
         bin.install "repo-hopper"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pteich/repo-hopper/releases/download/v0.2.0/repo-hopper-cli_linux_arm64.tar.gz"
-      sha256 "f4dc70a79601093cf85a56b23f46253945ca573b1ff25f627cf08de253d02024"
+      url "https://github.com/pteich/repo-hopper/releases/download/v0.2.1/repo-hopper-cli_linux_arm64.tar.gz"
+      sha256 "361aac1ab8123bbba3f42d1d6b271f1a5df92208998dced16d184500ef27246f"
       define_method(:install) do
         bin.install "repo-hopper"
       end
